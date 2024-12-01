@@ -1,0 +1,33 @@
+Write a program which takes two values x and y. Prints x for y number of times.
+
+Input:
+
+2 
+
+3
+
+Expected Output
+
+2
+
+2
+
+2
+
+Explanation - 2 is x and 3 is y in the input. So 2 is printed 3 times on the output
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b,i;
+    i=0;
+    cout<< "enter num:" <<endl;
+    cin>>a;
+    cout<< "enter num of times to print:"<<endl;
+    cin>>b;
+    while(i<b){
+        cout << a <<endl;
+        i=i+1;
+    }
+    return 0;
+}

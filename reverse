@@ -1,0 +1,24 @@
+Write a program that gets n as input and print the reverse of the number
+
+Testcase 1 :
+
+Input : 
+
+325345
+
+Expected output:
+
+543523
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+using namespace std;
+int main() {
+    int n=987987,rev;
+    while(n>0){
+        rev=n%10;
+        n=n/10;
+        cout<<rev;
+    }
+   
+    return 0;
+}

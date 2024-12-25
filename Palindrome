@@ -1,0 +1,23 @@
+
+Examples:
+
+Input: arr = [1, 2, 3, 2, 1]
+Output: true
+Explanation: Here we can see we have [1, 2, 3, 2, 1] if we reverse it we can find [1, 2, 3, 2, 1] which is the same as before. So, the answer is true.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+class Solution {
+  public:
+    bool isPerfect(vector<int> &arr) {
+        vector<int> arr1;
+        for(int j=arr.size()-1;j>-1;j--){
+            arr1.push_back(arr[j]);
+        }
+        if(arr==arr1){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+};

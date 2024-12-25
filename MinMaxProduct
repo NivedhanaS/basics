@@ -1,0 +1,44 @@
+Given two arrays of arr1 and arr2, the task is to calculate the product of the maximum element of the first array arr1, and minimum element of the second array arr2.
+
+Examples :
+
+Input : arr1 = [5, 7, 9, 3, 6, 2],  arr2 = [1, 2, 6, 1, 9]
+Output : 9
+Explanation: The max in arr1 is 9. The min element in arr2 is 1. The product is 9*1 = 9.
+Input : arr1 = [0, 0, 0, 0],  arr2 = [1, 1, 2]
+Output : 0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n1,i,n,max=0,min=0;
+    cout<<"n:";
+    cin>>n;
+    cout<<"n1:";
+    cin>>n1;
+    vector<int> arr(n);
+    vector<int> arr1(n1);
+    
+    for(i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    for(i=0;i<n1;i++){
+        cin>>arr1[i];
+    }
+    for(i=0;i<n;i++){
+        if(max<arr[i]){
+            max=arr[i];
+        }
+    }
+    for(i=0;i<n1;i++){
+        if(max>arr1[i]){
+            min=arr1[i];
+        }
+    }
+    
+    cout<<max*min;
+    
+    return 0;
+}
